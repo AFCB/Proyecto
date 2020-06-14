@@ -15,7 +15,26 @@ img{
 	border-radius: 150px; 
 }
 
+
+ a { 
+	text-decoration: none;
+	
+	pointer-events: none;
+	cursor: default;	
+}
+
+
+
+
+
+
 .botton {
 	
 	text-align: center;
+}
+
+
+.skil{
+	position: relative;
+	top: 0,5px;
 }

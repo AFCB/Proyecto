@@ -9,9 +9,43 @@
                  \|_________|   \|_________|
 */
 
+:root{
+	--color--black:#4d4a49;
+	
+	--color--nav:#3b4852;
+	
+	--color--while:#f7f3f2;
+	
+	--color--blue: #158799;
+	
+}
+
+/*==main==*/
 
 #main{
 	width: 50px
+}
+
+.icon a {
+	color: var(--color--black);
+	margin: 2px;
+	padding: 5px;
+}
+
+.icon i{
+	margin: 7px;
+	padding: 2px;
+}
+
+
+nav  {
+ background-color: var(--color--nav);	
+}
+
+nav H5{
+	color: white;
+	margin: 7px 7px 5px;
+	padding: 2px;
 }
 
 .header h2  {
@@ -28,6 +62,45 @@
 	border-radius: 150px; 
 	
 }
+
+
+/*==/main==*/
+
+
+/*==info==*/
+
+.skil{	
+	position: relative;
+	top: 0,5px;
+	
+}
+
+.skil a i {
+	color: var(--color--blue);
+	margin: 5px;
+	padding: 2px;
+}
+
+.skil .progress{
+	background-color: var(--color--while);
+}
+
+/*==/info==*/
+
+
+
+.cart img {
+	width: auto;
+	height: 190px;
+	object-fit: cover;
+	
+}
+
+
+
+
+
+/*==content==*/
 
  a { 
 	text-decoration: none;
@@ -49,15 +122,12 @@
 }
 
 
-.skil{
-	position: relative;
-	top: 0,5px;
-}	
+/*==/content==*/
 
-
-.employment {
 	
-}
+
+
+
 
 
 

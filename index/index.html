@@ -28,10 +28,12 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
               
     </head>
-   <body>
+   <body data-spy="scroll" data-target="#navbarSp" data-offset="71.67">
    
    <!--===Navbar===-->   
- <nav class="navbar navbar-expand-lg navbar-dark ">
+   
+<nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+ 
 	 <div class="container">
 			<a class="navbar-brand b" href="#">
 				<img id="main"  src="../img/logo.png" alt="">  
@@ -40,17 +42,32 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon">  </span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav ml-auto">
-				  <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-				  <a class="nav-item nav-link" href="#">Document</a>
+			
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">				
+		 <ul class="navbar-nav ml-auto">
+		 
+		  <li class="nav-item">
+			<a class="nav-link" href="#home">Home </a>
+		  </li>
+		
+		  <li class="nav-item">
+			<a class="nav-link " href="#document">Document</a>
+		  </li>
+
+		  <li class="nav-item">
+			<a class="nav-link " href="#contactact">Form</a>
+		  </li>
+
+		</ul>
 			</div>
 	    </div>
-	  </div>
+	  
  </nav>
+   
     <!--===/Navbar===-->
 	
   <!--===Cont===-->
+  <main id="home">
   <div class="header">
 	  <div class="container"> 
 		  <div class="jumbotron jumbotron-fluid">
@@ -64,18 +81,20 @@
 		</div>
 	</div>
 </div>	
+
+ 
   <!--===/Cont===-->
  
 	 <!--===Information===-->
 	
 	<div class="container">
 		<div class="row justify-content-around">
-			<div class="col-sm">
+			<div class="col-12 col-md-5 md-2" >
 			  <div class="info">
 				<h2 class="text-center">Information</h2>
 				<hr class="my">
 				<div class="icon">
-					<a href="">	<i class="far fa-envelope"></i>email@pepe.co </a>
+					<a href="">	<i class="far fa-envelope md-2"></i>email@pepe.co </a>
 	<br>
 	<br>
 					<a href=""> <i class="fas fa-phone"></i>Tel + 55577.8555 </a>
@@ -86,12 +105,12 @@
 	<br>
 					<a href=""> <i class="far fa-file"></i> www.WebPage.co </a>
 	<br>
-	<br>
+	
 		         </div>
 		      </div>
 	       </div>
 		 	 
-			<div class="col-sm">
+			<div class="col-12 col-md-5">
 				 <div class="skil">
 				 	<h2 class="text-center">Skills</h2>
 				       <hr class="my">
@@ -114,39 +133,62 @@
      <br>
 				 </div>
 			</div>
+ </main>			
 	 <!--===/Information===-->
 	
 	<br>
 	<br>
 	
 	  <!--===Card===-->
+<section id="document">	  
+ 
+  <div class="container "> 
+		<div class="row">
+		<div class="text-center col-12">
+			<h3> Mis proyectos </h3> 
+	   </div> 
+	   </div> 
+	<hr>
+  </div>	 	  	  
+	  
 	<div class="cart">
 	  <div class="container">
-        <div class="row text-center">
-        <div class="col-10 col-md "> 
-	     <div class="card" style="width: 18rem">
+        <div class="row">
+        <div class="col-sm-12 col-md-6 mb-4 col-lg-4 mb-4 "> 
+	     <div class="card" >
 	  	    <img src="../img/template%20.png" class="card-img-top" alt="...">
 	  	    <div class="card-body">
+  	      
+	  	      <span class="badge badge-primary mb-2">Word</span>
+	  	        <span class="badge badge-success">Exel</span>
+	  	        <span class="badge badge-danger">Powerpoin</span>
+	  	        
 	  	    	<h5 class="card-title"> Card Title</h5>
 	  	    	<p class="card_text"> Some information, this text is a example to build on the card title and make up the bulk of the card's content.</p>
 	  	    	 <a href="#" class="btn btn-primary">Go somewhere</a>
 	  	    </div>
 	     </div>
 	    </div>
-	     <div class="col-md"> 
-	     <div class="card" style="width: 18rem">
+	     <div class="col-sm-12 col-md-6 col-lg-4 mb-4 "> 
+	     <div class="card">
 	  	   <img src="../img/template%20.png" class="card-img-top" alt="..." >
 	  	    <div class="card-body">
+	  	    
+				<span class="badge badge-success mb-2">Exel</span>
+	  	    
 	  	    	<h5 class="card-title"> Card Title</h5>
 	  	    	<p class="card_text"> Some information, this text is a example to build on the card title and make up the bulk of the card's content.</p>
 	  	    	 <a href="#" class="btn btn-primary">Go somewhere</a>
 	  	    </div>
 	     </div>
 	    </div>
-	     <div class="col-md"> 
-	     <div class="card" style="width: 18rem">
+	     <div class="col-sm-12   col-md-6 offset-md-3  col-lg-4 offset-lg-0  "> 
+	     <div class="card">
 	  	   <img src="../img/template%20.png"  class="card-img-top" alt="...">
 	  	    <div class="card-body">
+	  	    
+	  	      <span class="badge badge-danger mb-2">Powerpoin</span>
+	  	    
 	  	    	<h5 class="card-title"> Card Title</h5>
 	  	    	<p class="card_text"> Some information, this text is a example to build on the card title and make up the bulk of the card's content.</p>
 	  	    	 <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -156,6 +198,8 @@
 	   </div>
 	</div>
  </div>	
+ 
+
 <!--===/Card===-->
 	
 	<br>
@@ -164,7 +208,7 @@
 <!--==Container==-->
 	<div class="container">
       <div class="row">
-                     <div class="col-md">
+                     <div class="col-md mb-4">
                       <div>
                        <div class="exper">
                        	 <h2>Experience</h2>
@@ -174,36 +218,84 @@
                       	       
                        	  </div>
           <div class="row">                         	   
-                  <div class="col-6 text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
-					 <div class=" col-6 "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project — everything can be a struggle.</p> </div>
+                  <div class="col-12 col-lg-4 text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
+					 <div class=" col-12 col-lg text-justify "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project  everything can be a struggle.</p> </div>
               </div>    
            <br>   
            <br>   
                <div class="row">                         	   
-                  <div class="col-6 text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
-					 <div class=" col-6 "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project — everything can be a struggle.</p> </div>
+                  <div class="col-12 col-lg-4  text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
+					 <div class=" col-12 col-lg text-justify "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project  everything can be a struggle.</p> </div>
               </div> 
             <br>  
             <br>  
                <div class="row">                         	   
-                  <div class="col-6 text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
-					 <div class=" col-6 "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project — everything can be a struggle.</p> </div>
+                  <div class="col-12 col-lg-4 text-center"> <p> <strong> 25 -Agost-2020 </strong> </p> </div>
+					 <div class=" col-12 col-lg text-justify "> <h5> Bank <i class="fas fa-archive"></i>  </h5>  <p class="text-justify"> I believe the other name for coding is the  “struggle”. And if you are a beginner or a junior developer, this struggle often is multiplied by 100. Learning to code, finding the right resources, making a portfolio, hunting an internship or a junior dev job, and then working on a real-life project  everything can be a struggle.</p> </div>
               </div> 
              </div>		
           </div>
        </div>
      </div> 
-                       
+                
+  </section>                             
  <!--==/Container==--> 
  
+  <!--==Email==-->
+  
+ <section id="contactacto" class="pt-4 pb-4"> 
+
+	  <div class="container">
+	    <div class="row pt-2 pb-2">
+		   <div class=" col text-center text-uppercase">
+             <h3>Contactame</h3>
+             
+		   </div>
+         </div>   
+            
+          <div class="row mb-2">
+             <div class="col">
+               <small>     </small>    
+              </div> 	
+           </div>
+        
+	   <div class="row">
+
+			<div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2 ">
+				<form>
+					<div class="form-row">
+						<div class=" form-group col-12 col-md-6">
+					  <input type="text" class="form-control" placeholder="First name">
+						</div>
+						<div class=" fom-group col-12 col-md-6">
+						<input type="text" class="form-control" placeholder="Last name ">
+						</div>
+					 </div>
+
+				<div class="form-group pt-3">
+						<input type="email" class="form-control" id="InputEamail" aria-describedby="emailHelp" placeholder="Enter email" > 
+				   <small id="emailHelp" class="form-text- text-muted">If you would like to contacte pleas leave you email.</small>	
+				</div>
+			  </form>
+			</div> 
+
+		 </div> 
+
+	</div>
+	
+	 	   
+ </section> 
+  <!--==/Email==-->
+ 
+
+ <!--==Footer==-->
+  
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
       <small>Copyright &copy; Your Website</small>
     </div>
   </footer>
   
-  
-
   <!--==/Footer==-->
 
 
